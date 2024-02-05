@@ -20,31 +20,7 @@
        select * from member where member_id=#{memberId}
     </select>
     
-    <!-- 회원가입 -->
-    <insert id="memberJoin">
-       insert into member(
-       member_id,
-       member_pw,
-       member_name,
-       member_level,
-       member_email,
-       member_gender,
-       member_manner,
-       member_birth,
-       img_no
-       ) 
-       values(
-       #{memberId},
-       #{memberPw},
-       #{memberName},
-       DEFAULT,
-       #{memberEmail},
-       #{memberGender},
-       DEFAULT,
-       #{memberBirth},
-       #{imgNo}
-       )
-    </insert>
+    
     
    <!-- 이메일 상세조회 -->
     <select id="selectEmail" resultType="MemberDto">
