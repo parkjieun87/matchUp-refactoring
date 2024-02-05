@@ -45,6 +45,13 @@
 			<optional>true</optional>
 		</dependency>
 
+
+		<!-- JPA를 사용하기 위해 추가한 의존성 -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-entitymanager</artifactId>
+		    <version>5.3.10.Final</version>
+		</dependency>
 		
 		<dependency>
 			<groupId>com.oracle.database.jdbc</groupId>
